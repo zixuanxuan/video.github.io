@@ -20,4 +20,20 @@ $(function () {
         $(".container").show();
         $(".video-page").hide();
     })
+    $(".video-list li").click(function () {
+        $(".video-list li").children().css({
+            color: "#000"
+        })
+        $(".video-list li").children("span").css({
+            "background": 'url("image/videoListPlay@2x.png")',
+            "background-size": "100% 100%"
+        })
+        $(this).children().css({
+            color: "#36bac8"
+        })
+        $(this).children("span").css({
+            "background": 'url("image/videoListStop@2x.png")',
+            "background-size": "100% 100%"
+        })
+    })
 })
