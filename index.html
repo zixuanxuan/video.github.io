@@ -51,23 +51,23 @@
             </ul>
             <ul class="content">
                 <li>
-                    <div id="output"></div>
+                    <div class="output"></div>
                     <p>重视肢体损伤中软组织伤情评估与处理</p>
                 </li>
                 <li>
-                    <div id="output"></div>
+                    <div class="output"></div>
                     <p>重视肢体损伤中软组织伤情评估与处理</p>
                 </li>
                 <li>
-                    <div id="output"></div>
+                    <div class="output"></div>
                     <p>重视肢体损伤中软组织伤情评估与处理</p>
                 </li>
                 <li>
-                    <div id="output"></div>
+                    <div class="output"></div>
                     <p>重视肢体损伤中软组织伤情评估与处理</p>
                 </li>
                 <li>
-                    <div id="output"></div>
+                    <div class="output"></div>
                     <p>重视肢体损伤中软组织伤情评估与处理</p>
                 </li>
             </ul>
@@ -127,7 +127,7 @@
         var video, output;
         var scale = 0.8;
         var initialize = function() {
-        output = document.getElementById("output");
+        output = document.querySelectorAll("output");
         video = document.getElementById("video");
         video.addEventListener('loadeddata',captureImage);
         };
