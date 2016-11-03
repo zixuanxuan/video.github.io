@@ -26,7 +26,7 @@ var captureImage = function() {
             canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
 
             var img = document.createElement("img");
-            img.src = canvas.toDataURL("image/png");
+            img.src = canvas.toDataURL("image/png",1.0);
             output.appendChild(img);
 };
 
