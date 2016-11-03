@@ -16,4 +16,8 @@ $(function () {
         $(".container").hide();
         $(".video-page").show();
     })
+    $(".return").click(function () {
+        $(".container").show();
+        $(".video-page").hide();
+    })
 })
