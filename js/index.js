@@ -12,7 +12,8 @@ $(function () {
         })
     });
 
-    $("video").click(function () {
-
+    $(".content li").click(function () {
+        $(".container").hide();
+        $(".video-page").show();
     })
 })
