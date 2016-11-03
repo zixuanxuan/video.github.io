@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="email=no" name="format-detection">
+        <script src="js/jquery-2.2.3.js" charset="utf-8"></script>
+        <script type="text/javascript" src="js/calcRootFontSize.js"></script>
+        <link rel="stylesheet" href="css/reset.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/index.css" media="screen" title="no title">
+        <title>视频</title>
+    </head>
+    <body>
+        <header>
+            <span class="keshi">科室</span>
+            <span class="liebiao">视频列表</span>
+        </header>
+        <div class="container">
+            <ul class="list">
+                <li>普外科</li>
+                <li>骨科</li>
+                <li>泌尿外科</li>
+                <li>神经外科</li>
+                <li>血管外科</li>
+                <li>心外科</li>
+                <li>胸外科</li>
+                <li>整形外科</li>
+                <li>呼吸科</li>
+                <li>消化科</li>
+                <li>心内科</li>
+                <li>血液科</li>
+                <li>肾内科</li>
+                <li>神经内科</li>
+                <li>内分泌科</li>
+                <li>风湿免疫科</li>
+                <li>妇科</li>
+                <li>产科</li>
+                <li>儿科</li>
+                <li>肿瘤科</li>
+                <li>眼科</li>
+                <li>耳鼻喉头颈科</li>
+                <li>口腔科</li>
+                <li>皮肤科</li>
+                <li>传染科</li>
+                <li>急诊科</li>
+                <li>精神科</li>
+                <li>中医科</li>
+            </ul>
+            <ul class="content">
+                <li>
+                    <!-- <video src="image/aa.mp4" poster="image/shipinTrain@2x.png" height=150 controls>
+
+                    </video> -->
+                    <!-- <video height=150>
+                        <source src="image/aa.mp4" type="video/mp4">
+                    </video> -->
+                    <video id="video" controls="controls">
+                        <source src="aa.mp4">
+                    </video>
+                    <div id="output"></div>
+                    <p>重视肢体损伤中软组织伤情评估与处理</p>
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+
+            </ul>
+        </div>
+    </body>
+    <script src="js/index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    (function(){
+        var video, output;
+        var scale = 0.8;
+        var initialize = function() {
+        output = document.getElementById("output");
+        video = document.getElementById("video");
+        video.addEventListener('loadeddata',captureImage);
+        };
+
+        var captureImage = function() {
+                var canvas = document.createElement("canvas");
+                canvas.width = video.videoWidth * scale;
+                canvas.height = video.videoHeight * scale;
+                console.log(video.videoWidth);
+                console.log(video.videoHeight);
+                canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+                var img = document.createElement("img");
+                // img.src = canvas.toDataURL("../image/png");
+                output.appendChild(img);
+        };
+        initialize();
+        })();
+    </script>
+<html>

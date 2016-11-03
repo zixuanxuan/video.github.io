@@ -1,0 +1,78 @@
+body {
+    font-size: 14px;
+    background: #f0f0f0;
+}
+header {
+    width: 100%;
+    height: 1rem;
+    background: #e5f6ff;
+    line-height: 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.container {
+    margin-top: 1rem;
+}
+header span {
+    background: #36bac8;
+    color: #fff;
+    font-size: 0.3rem;
+    border-radius: 4px;
+}
+header .keshi {
+    padding: 0.15rem 0.2rem;
+    margin-left: 0.5rem;
+}
+header .liebiao {
+    padding: 0.15rem 0.2rem;
+    margin-left: 1.5rem;
+}
+.list {
+    width: 25%;
+    float: left;
+    text-align: center;
+    overflow: scroll;
+    font-size: 0.3rem;
+}
+.list li:nth-child(1) {
+    background: #36bac8;
+}
+.list li {
+    line-height: 0.8rem;
+    border-bottom: 1px solid #ccc;
+}
+.content {
+    width: 75%;
+    float: left;
+    overflow: scroll;
+}
+.content li {
+    overflow: hidden;
+    background: #fff;
+    margin-top: 0.2rem;
+    padding: 0.3rem 0.2rem;
+    /*position: relative;*/
+    /*background-image: url(../image/arrow_right@2x.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 6%;*/
+}
+.content li span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #82bc35;
+    color: #fff;
+    padding: 0.05rem;
+}
+.content p {
+    /*width: 4.5rem;*/
+    display: inline-block;
+    margin: 0.2rem 0.1rem;
+}
+video {
+    width: 5.2rem;
+    height: 3rem;
+}
